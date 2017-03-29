@@ -1,0 +1,69 @@
+<!---->
+<!--
+ELEMENTI INTRODOTTI
+clear
+clearfix
+after
+box-sizing: serve per contenere tutti i div all'interno della finestra
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chi siamo</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<!--un div ha una misura ed è largo come il mio monitor eprende il 100% di larghezza ma 0 di altezza. Bisogna dargliela nello stile, come nella classe .bg-->
+
+<!--Se non do un'altezza al div si adatta al contenuto-->
+
+<!---->
+<!--la testata del sito-->
+<header>
+	<div class="logo text-color">LOGO</div>
+	<a href="#" class="login text-color">Login</a>
+</header>
+<!--navigation è menu-->
+<!--role: è un elemento della semantica-->
+<nav>
+
+	<ul><!--la ul ha comunque un margine, ma non si vede-->
+		<!--Usata più spesso, mette dei pallini-->
+		<li>
+			<a href="index2.html">home</a>
+		</li>
+		<li>
+			<a href="#">about</a>
+		</li>
+		<li>
+			<a href="contact.html">contact</a>
+		</li>
+	</ul>
+</nav>
+
+<div class="container">
+	<section>
+		<h1 class="text-color">BENVENUTO NELLA HOME</h1>
+		<p class="text-color">ciao</p>
+	</section>
+	<aside>
+		<h2>Menu secondario</h2>
+	</aside>
+</div>
+
+
+
+<!--Per non usare sempre un sacco di div, possiamo usare la semantica di html.
+Vedi link su moodle-->
+
+<!--Il clear elimina degli elementi floattanti intorno a ldiv. Se non lo faccio,
+rischio che i div si sovrappongono. Fa comunque seguire una corsia.
+Il clearfix, creando un contenuto vuoto, separa i div. Fa stare tutti gli elementi
+al loro posto, impedendo che, anche se hanno altezze differenti, si sovrappongono
+Clear separa, clearfix permette di avere il suo spazio-->
+
+
+</body>
+</html>
