@@ -47,15 +47,23 @@ box-sizing: serve per contenere tutti i div all'interno della finestra
 
 
 		<section>
-			<h1 class="text-color">BENVENUTO NELLA HOME</h1>
-			<p class="text-color">ciao</p>
+			<h1>BENVENUTO NELLA HOME</h1>
+			<p>ciao</p>
 		</section>
 		<aside>
 			<h2>Menu secondario</h2>
 		</aside>
 
+		<div class="square-section">
+
+		</div>
+
 
 	</div>
+	<footer><!--Di default prende le dime sioni dei p-->
+		<p>Marco Srl - Via Domenica Cia 50, 10097 Falabrac</p>
+		<p>PIVA: 123456789</p>
+	</footer>
 
 
 <!--Per non usare sempre un sacco di div, possiamo usare la semantica di html.
@@ -70,3 +78,41 @@ Clear separa, clearfix permette di avere il suo spazio-->
 
 	</body>
 </html>
+
+<!---->
+<!--20170405-->
+<!--POSITION E OVERFLOW-->
+<!--OVERFLOW: fa vedere il contenuto in scorrimento quando il div supera l'ampiezza
+della pagina (sia in verticale che orizzontale).
+Se nel css si da l'attributo hidden, lo scorrimento viene bloccato.
+Per avere l'overflos solo in verticale, si utilizza overflow-y
+L'overflow viene bloccato nei contenitori dentro la pagina: come le
+section, i div. Oppure se voglio bloccare la sidebar ma la section farla
+scrollare-->
+<!--POSIZINI-->
+<!--determinano esattamente dove un elemento va messo all'interno della
+pagina. Se io un oggetto lo volessi avere in punto preciso. Però io non
+posso dire "posizionati lì", se io non gli do un punto di riferimento,
+non sa calcolarsi la posizione. Quindi quando io posiziono un elemento
+ho due modalità:
+-position fixed: premnde come putno di riferimento la windows, il nostro browser,
+la grandezza della nostra finestra. Il livello più alto in assoluto.
+Si stacca da tutto e fa riferimento solo alla finestra del nostro browser
+-position absolute: ha bisogno di un genitore da cui prenderà le dimensioni
+di riferimento. Questo gentiore deve avere una proprietà: position relative.
+Quando un tag html è in position relative, è pronto per ospitare dei figli in
+position absolute-->
+
+<!--un elemento fixed si sgancia dalla pagina e quindi tutto quello che
+c'era sotto va via-->
+
+
+<!--Z-INDEX-->
+<!--è un valore che puà andare da -inf a +inf-->
+<!--è il discorso dei layer-->
+<!--è meglio sempre specificare uno z-index a un elemento fixed in modo
+che quando scorre, non scompaia sotto un altro elemento-->
+
+<!--COORDINATE-->
+<!--Le cordinate top, left, ecc, posson oessere anche negative in modo
+che siano anche calamitate-->
