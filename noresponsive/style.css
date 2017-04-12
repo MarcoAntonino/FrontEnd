@@ -1,0 +1,178 @@
+*{
+	/*i box sono i contenitori (div, p, ecc), con questa istruzione gli dico che il suo contenuto deve essere tutto dentro il mio monitor, evitando quindi che vada a capo da solo se non ci sta*/
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	/*100vh significa il 100% dell'altezza del monitor utilizzato, vh è consigliato metterlo solo nell'html e nel body*/
+	height: 100vh;
+}
+
+body{
+	padding-top: 90px;	/*aumento padding-top del body perchè ho messo fixed nav e header*/
+}
+
+header{
+	background: orange;
+	padding: 20px;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 100;
+}
+
+header .logo{
+	float: left;
+}
+
+header .login{
+	float: right;
+}
+
+header .text-color{
+	color: white;
+}
+
+p{
+	text-align: justify;
+}
+
+.bg2{
+	background: green;
+	padding: 20px;
+	width: 50%;
+	margin: 10px auto 0 auto;	/*top right bottom left; scrivere solamente "0 auto" è come se fosse un "float center"*/
+	text-align: center;
+}
+
+.text-color{
+	color: red;
+}
+
+.container{
+	clear: both;	/*pulisce i float right e left, e va capo*/
+	width: 100%;
+	height: 100%;
+}
+
+/*questo container successivo è detto clearfix e si usa perché il body vede tutti i div come un oggetto unico, anche se vanno a capo con il clear (lo vede come una serpentina), aggiungendo un contenuto vuoto, interrompo la serpentina e ciò che c'è dopo sarà a se stante*/
+.container:after{	/*after mi dice appena dopo il container aggiungi quello che c'è dentro*/
+	content: "";
+	display: block;
+	clear: both;
+}
+
+nav {
+	background: #eee;
+	height: 40px;
+	width: 100%;
+	padding-top: 9px;
+	padding-left: 20px;
+	position: fixed;
+	top: 50px;
+	z-index: 100;
+}
+
+nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li{
+	float: left;
+	margin-right: 10px;
+}
+
+nav ul a{
+	text-decoration: none;
+}
+
+section {
+	float: left;
+	height: 100%;
+	background: #ff6000;
+	width: 60%;
+	position: relative;
+}
+
+section h1{
+	color: white;
+}
+
+section p{
+	color: white;
+}
+
+aside {
+	float: right;
+	height: 100%;
+	background: brown;
+	position: relative;
+	width: 40%;
+}
+
+aside p{
+	color: white;
+}
+
+footer{
+	background-color: black;
+	color: white;
+	padding: 10px;
+	height: 100px;
+}
+
+footer p{
+	text-align: center;
+}
+
+.square-section{
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	position: absolute;	/*fissato in base al genitore (che deve essere position relative)*/
+	top: 50px;
+	right: 50px;
+}
+
+.square-external{
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	position: absolute;	/*fissato in base al genitore (che deve essere position relative)*/
+	top: 50px;
+	right: -50px;
+	z-index: 11;
+}
+
+.square-page{
+	width: 100px;
+	height: 100px;
+	background-color: rgba(144, 238, 144, 0.6);
+	position: fixed;	/*fissato in base alla finestra*/
+	top: 40px;
+	right: 20px;
+	z-index: 100000000;
+}
+
+.img-container{
+	float: left;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	width:70%;
+}
+
+.img-background{
+	background-image: url("images/wallpaper2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;	/*allarga immagine in modo che il div sia sempre pieno senza spazi bianchi*/
+	/*background-size: contain*/ /*forza l'immagine a stare per intero nel div a scapito di avere bordi o spazi vuoti*/
+	background-attachment: fixed;	/*la blocca sulla pagina come per i div (effetto finestra)*/
+	width:100%;
+	height: 60%;
+}
