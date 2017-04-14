@@ -1,0 +1,7 @@
+*{box-sizing: border-box;} /*Resta nella finestra data a disposizione*/
+
+html,body{
+  margin: : 0px;
+  height: 100vh;
+  background-color: #e1e6e9;  
+}
