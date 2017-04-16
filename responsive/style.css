@@ -1,5 +1,7 @@
 *{
-	/*i box sono i contenitori (div, p, ecc), con questa istruzione gli dico che il suo contenuto deve essere tutto dentro il mio monitor, evitando quindi che vada a capo da solo se non ci sta*/
+	/*i box sono i contenitori (div, p, ecc), con questa istruzione gli dico che
+	 il suo contenuto deve essere tutto dentro il mio monitor, evitando quindi
+	 che vada a capo da solo se non ci sta*/
 	box-sizing: border-box;
 }
 
@@ -46,7 +48,8 @@ p{
 	background: green;
 	padding: 20px;
 	width: 50%;
-	margin: 10px auto 0 auto;	/*top right bottom left; scrivere solamente "0 auto" è come se fosse un "float center"*/
+	margin: 10px auto 0 auto;	/*top right bottom left; scrivere solamente "0 auto"
+	 è come se fosse un "float center"*/
 	text-align: center;
 }
 
@@ -60,7 +63,10 @@ p{
 	position: relative;
 }
 
-/*questo container successivo è detto clearfix e si usa perché il body vede tutti i div come un oggetto unico, anche se vanno a capo con il clear (lo vede come una serpentina), aggiungendo un contenuto vuoto, interrompo la serpentina e ciò che c'è dopo sarà a se stante*/
+/*questo container successivo è detto clearfix e si usa perché il body vede tutti
+ i div come un oggetto unico, anche se vanno a capo con il clear
+ (lo vede come una serpentina), aggiungendo un contenuto vuoto, interrompo la
+ serpentina e ciò che c'è dopo sarà a se stante*/
 .container:after{	/*after mi dice appena dopo il container aggiungi quello che c'è dentro*/
 	content: "";
 	display: block;
@@ -137,8 +143,6 @@ footer{
 	height: 100px;
 	width: 100%;
 	clear: left;
-	bo
-
 }
 
 footer p{

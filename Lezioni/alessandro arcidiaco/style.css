@@ -1,0 +1,184 @@
+*{
+	/*i box sono i contenitori (div, p, ecc), con questa istruzione gli dico che il suo contenuto deve essere tutto dentro il mio monitor, evitando quindi che vada a capo da solo se non ci sta*/
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+html, body {
+	margin: 0;
+	/*100vh significa il 100% dell'altezza del monitor utilizzato, vh è consigliato metterlo sono nell'html e nel body*/
+	height: 100%;
+}
+
+body{
+	padding-top: 90px;
+}
+
+h1, h2{
+	margin-top: 0;
+}
+
+header{
+	background: orange;
+	padding: 20px;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+}
+
+header .logo{
+	float: left;
+}
+
+header .login{
+	float: right;
+}
+
+header .text-color{
+	color: white;
+}
+
+.bg2{
+	background: green;
+	padding: 20px;
+	width: 50%;
+	margin: 10px auto 0 auto;	/*top right bottom left; scrivere solamente "0 auto
+	" è come se fosse un "float center"*/
+	text-align: center;
+}
+
+.text-color{
+	color: red;
+}
+
+.container{
+	clear: both;	/*pulisce i float right e left, e va capo*/
+	width: 100%;
+	position: relative;
+}
+
+/*questo container successivo è detto clearfix e si usa perché il body vede tutti i div come un oggetto unico, anche se vanno a capo con il clear (lo vede come una serpentina), aggiungendo un contenuto vuoto, interrompo la serpentina e ciò che c'è dopo sarà a se stante*/
+.container:after{	/*after mi dice appena dopo il container aggiungi quello che c'è dentro*/
+	content: "";
+	display: block;
+	clear: both;
+}
+
+nav {
+	background: #eee;
+	height: 40px;
+	padding-top: 9px;
+	padding-left: 20px;
+	position: fixed;
+	top: 50px;
+	left:0;
+	right:0;
+	z-index: 100;
+}
+
+nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li{
+	float: left;
+	margin-right: 10px;
+}
+
+nav ul a{
+	text-decoration: none;
+}
+
+
+section {
+	position: relative;
+	float: none;
+	height: 100%;
+	background: #ff4e00;
+	width: 100%;
+	clear: both;
+}
+
+section h1{
+	color: white;
+}
+
+section p {
+	color: white;
+}
+
+aside {
+	float: none;
+	height: 100%;
+	background: brown;
+	width: 100%;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	height: 100px;
+	width: 100%;
+	clear: left;
+}
+
+
+
+/*.img-container {
+	background-image: url('./images/torino.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 500px;
+	float: none;
+}*/
+
+/*.img-container p{
+	color: black;
+}*/
+
+img{
+	width:100%;
+	max-width: 100%;
+	height: auto;
+}
+
+p{
+	text-align: justify;
+}
+
+h1{
+	font-size: 3em;
+}
+
+/*RESPONSIVE*/
+@media screen and (min-width: 1024px){
+	*{
+		font-size: 18px;
+	}
+	aside{
+		float: right;
+		width: 40%;
+		position: absolute;
+		right: 0;
+		top; 0;
+		bottom: 0;
+	}
+	section{
+		float: left;
+		width: 60%;
+	}
+
+	h1{
+		font-size: 3em;
+	}
+
+}
