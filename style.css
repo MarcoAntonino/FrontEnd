@@ -4,9 +4,10 @@
   la togleirai quando hai finito*/
 }
 /*
-In box sizing gli sto dicendo che lui deve essere contenuto all'interno del mio monitor. Altrimenti si prende le posizioni assolute.
+In box sizing gli sto dicendo che lui deve essere contenuto all'interno del mio
+monitor. Altrimenti si prende le posizioni assolute.
 Forziamo tutti i nostri contenitori ad essere allineati e contenuti all'interno del nostro schermo.
-in qeusto modo anche se c'è il padding, posso affiancare gli elementi
+In questo modo anche se c'è il padding, posso affiancare gli elementi
 DA METTERE SEMPRE IN TESTA
 */
 html, body{/*html dice al browser che da dove inizia il suo tag deve stampare tutto*/

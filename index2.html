@@ -15,7 +15,9 @@ box-sizing: serve per contenere tutti i div all'interno della finestra
 
 <body>
 
-<!--un div ha una misura ed è largo come il mio monitor eprende il 100% di larghezza ma 0 di altezza. Bisogna dargliela nello stile, come nella classe .bg-->
+<!--un div ha una misura ed è largo come il mio monitor e prende il 100%
+di larghezza ma 0 di altezza. Bisogna dargliela nello stile, come nella classe
+ .bg-->
 
 <!--Se non do un'altezza al div si adatta al contenuto-->
 
@@ -60,7 +62,7 @@ box-sizing: serve per contenere tutti i div all'interno della finestra
 
 
 	</div>
-	<footer><!--Di default prende le dime sioni dei p-->
+	<footer><!--Di default prende le dimensioni dei p-->
 		<p>Marco Srl - Via Domenica Cia 50, 10097 Falabrac</p>
 		<p>PIVA: 123456789</p>
 	</footer>
@@ -69,7 +71,7 @@ box-sizing: serve per contenere tutti i div all'interno della finestra
 <!--Per non usare sempre un sacco di div, possiamo usare la semantica di html.
 Vedi link su moodle-->
 
-<!--Il clear elimina degli elementi floattanti intorno a ldiv. Se non lo faccio,
+<!--Il clear elimina degli elementi floattanti intorno al div. Se non lo faccio,
 rischio che i div si sovrappongono. Fa comunque seguire una corsia.
 Il clearfix, creando un contenuto vuoto, separa i div. Fa stare tutti gli elementi
 al loro posto, impedendo che, anche se hanno altezze differenti, si sovrappongono
@@ -89,13 +91,13 @@ Per avere l'overflos solo in verticale, si utilizza overflow-y
 L'overflow viene bloccato nei contenitori dentro la pagina: come le
 section, i div. Oppure se voglio bloccare la sidebar ma la section farla
 scrollare-->
-<!--POSIZINI-->
+<!--POSIZIONI-->
 <!--determinano esattamente dove un elemento va messo all'interno della
 pagina. Se io un oggetto lo volessi avere in punto preciso. Però io non
 posso dire "posizionati lì", se io non gli do un punto di riferimento,
 non sa calcolarsi la posizione. Quindi quando io posiziono un elemento
 ho due modalità:
--position fixed: premnde come putno di riferimento la windows, il nostro browser,
+-position fixed: premade come punto di riferimento la windows, il nostro browser,
 la grandezza della nostra finestra. Il livello più alto in assoluto.
 Si stacca da tutto e fa riferimento solo alla finestra del nostro browser
 -position absolute: ha bisogno di un genitore da cui prenderà le dimensioni

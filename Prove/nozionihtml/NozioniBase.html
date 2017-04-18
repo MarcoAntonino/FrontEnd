@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <title>Nozioni base di Html</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" >
+  </head>
+  <body>
+    <header>
+      <div class="">LOGO</div>
+      <a href="#">Login</a>
+    </header>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="Index.html">HOME</a>
+        </li>
+        <li>
+          <a href="html.html">HTML</a>
+        </li>
+        <li>
+          <a href="css.html">CSS</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h4>Ecco il modo corretto di scrivere i tag.</h3>
+    <code><pre>&lt;p&gt;My cat is &lt;strong&gt;very&lt;/strong&gt; grumpy.&lt;/p&gt;</pre></code>
+    <p>Notare che non si incrociano</p>
+
+    <p>Nell’html posso scrivere senza tag e viene stampato dal browser senza
+      problemi. Se lo metto dentro al tag, me lo stampa nello stile predefinito
+      dei browser. Quindi nel browser ci sono già degli stili predefiniti che a
+      volte interferiscono con il lavoro.</p>
+    <ul>
+      <li>Per Chrome è webkit</li>
+      <li>Per Mozilla è moz</li>
+      <li>Per Microsoft è ms</li>
+    </ul>
+
+    <p>Se si fa ispeziona elementi, ecco cosa ottieni:</p>
+    <img src="img/pagestyle.jpg" alt="Pagestyle">
+
+    <p>Ci sono due tipi di elementi: <strong>block level elements</strong> e
+      <strong>inline elements</strong></p>
+    <ul>
+      <li>i block elements sono elementi che ovunque tu li metta, andranno a
+      capo rispetto all'elemento precedente e faranno andare a capo l'elemento
+      che li segue. Un esempio di block elements sono <em>paragrafi, liste,
+      menu di navigazione, footers</em>. <u>I block elements possono essere
+      nestati solo sotto altri block elements</u></li>
+      <li>Di solito sono contenuti dentro livelli di blocchi e wrappano piccole
+      parti di contenuti. Un esempio possono essere i tag link. </li>
+    </ul>
+
+    <p>Vi sono poi degli elementi, chiamati empty elements, che hanno solo un tag,
+      senza quello di chiusura come per esempio quello dell'immagine.</p>
+      <code><pre>&lt;img src="" alt=""&gt;</pre></code>
+
+    <h3>Anatomia di una pagina HTML</h3>
+    <p><ul>
+      <li>DOCTYPE: Da mettere, retaggio del passato.</li>
+      <li> tag html: Elemento html, wrappa tutta la pagina</li>
+      <li> head: contiene tutti gli elementi che vuoi mettere nella pagina ma
+        non vuoi far vedere all'utente. Questo comprende cose come
+        <ul>
+          <li>Una descrizione della pagina che vuoi far apparire nella sezione
+            ricerca</li>
+          <li>Il codice CSS che dà lo stile alla pagina</li>
+          <li>Il set di caratteri che vogliamo dare alla pagina</li>
+        </ul>
+      </li>
+      <li>Il titolo: appare nel browser quando apri la pagina e viene utilizzato
+        nei segnalibri</li>
+      <li>Il body: contiene <em>tutto</em> quello che vuo ifare vedere agli utenti</li>
+    </ul></p>
+
+    <p><a href="http://mediatemple.net/blog/tips/eight-essential-cheat-sheets/?utm_source=facebook&utm_campaign=blog&utm_medium=paidsocial&utm_term=linkpreview&utm_content=cheatsheet"></a>Cheatsheet</p>
+
+
+  </body>
+</html>
