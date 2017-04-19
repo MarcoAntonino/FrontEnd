@@ -3,6 +3,7 @@
 	 il suo contenuto deve essere tutto dentro il mio monitor, evitando quindi
 	 che vada a capo da solo se non ci sta*/
 	box-sizing: border-box;
+	border: 1px solid black;
 }
 
 html, body {
@@ -44,23 +45,11 @@ p{
 	text-align: justify;
 }
 
-.bg2{
-	background: green;
-	padding: 20px;
-	width: 50%;
-	margin: 10px auto 0 auto;	/*top right bottom left; scrivere solamente "0 auto"
-	 è come se fosse un "float center"*/
-	text-align: center;
-}
-
-.text-color{
-	color: red;
-}
-
 .container{
 	clear: both;	/*pulisce i float right e left, e va capo*/
-	width: 100%;
+	width: 80%;
 	position: relative;
+	float: right;
 }
 
 /*questo container successivo è detto clearfix e si usa perché il body vede tutti
@@ -102,7 +91,7 @@ nav ul a{
 section {
 	background: #ff4e00;
 	height: 100%;
-	position: relative;
+	width: 100%;
 }
 
 
@@ -120,113 +109,9 @@ section p{
 	color: white;
 }
 
-aside {
-
-	float: none;
-	height: 100%;
-	background: brown;
-	width: 100%;
-}
 
 
 
-aside p{
-	color: white;
-}
-
-footer{
-	background-color: black;
-	color: white;
-	text-align: center;
-	padding: 10px;
-	height: 100px;
-	width: 100%;
-	clear: left;
-}
-
-footer p{
-	text-align: center;
-}
-
-.square-section{
-	width: 100px;
-	height: 100px;
-	background-color: white;
-	position: absolute;	/*fissato in base al genitore (che deve essere position relative)*/
-	top: 50px;
-	right: 50px;
-}
-
-.square-external{
-	width: 100px;
-	height: 100px;
-	background-color: white;
-	position: absolute;	/*fissato in base al genitore (che deve essere position relative)*/
-	top: 50px;
-	right: -50px;
-	z-index: 11;
-}
-
-.square-page{
-	width: 100px;
-	height: 100px;
-	background-color: rgba(144, 238, 144, 0.6);
-	position: fixed;	/*fissato in base alla finestra*/
-	top: 40px;
-	right: 20px;
-	z-index: 100000000;
-}
-
-.img-container{
-	float: left;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	width:100%;
-}
-
-.img-background{
-	background-image: url("images/wallpaper2.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;	/*allarga immagine in modo che il div sia sempre pieno senza spazi bianchi*/
-	/*background-size: contain*/ /*forza l'immagine a stare per intero nel div a scapito di avere bordi o spazi vuoti*/
-	background-attachment: fixed;	/*la blocca sulla pagina come per i div (effetto finestra)*/
-	width:100%;
-	height: 60%;
-}
-
-h1{
-	/*font-size: 1em; Corrisponde a 18px*/
-	font-size: 3em /*fa riferimento ai 14px*/
-}
-
-/*Tutto ciò che va è sopra è per il mobile*/
-/*RESPONSIVE*/
-/*Tutto questo ha a che fare con il mondo che è sopra al 1024*/
-@media screen and (min-width: 1024px)/* and (max-width: 1200px)*/{
-	*{
-			font-size: 18px /*Da qui in poi voglio che il sito sia a 18px*/
-	}
-	aside{
-		float:right;
-		width:40%;
-		position: absolute;
-		right: 0;
-		top: 0;
-		bottom: 0;
-	}
-
-	section{
-		float:left;
-		width:60%;
-	}
-
-	h1{
-		/*font-size: 1em; Corrisponde a 18px*/
-		font-size: 1.3em
-	}
-
-
-	}
 
 /*Nel mobile si danno degli intervalli, degli scalini, non degli intervalli*/
 /*Si ragiona mobile first*/
