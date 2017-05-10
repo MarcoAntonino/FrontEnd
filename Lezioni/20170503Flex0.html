@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>3 maggio I Flex</title>
+    <link rel="stylesheet" type="text/css" href="./Flexstyle.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="logo">
+        LOGO
+      </div>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+
+      </ul>
+    </header>
+
+
+    <div class="container">
+      <div class="sinistra">
+          <!--<div class="sinistra-child">
+
+          </div>-->
+
+          <h1>I flex</h1>
+
+          <p>Sono proprietà css che ci permettono far rpendere automaticamente lo
+            spazio agli elementi che hanno questa proprietà.</p>
+
+            <p>Due elementi per il flex:
+              <ul>
+                <li><strong>genitore:</strong> a lui daremo display flex. facendo così prepariamo il cotnenitore a posizionare automaticamente quello che gli metteremo dentro prendendo tutto lo spazio disponibile. quindi gli elementi che ci sarannao dentro, saranno esattamente della stessa larghezza e estessa lungehzza. Quindi due div che io inserisco all'interno di un container flex, andranno a riempire vericalmente e orizzontalmente lo spazio. </li>
+                <li><strong>figli:</strong> possiamo allinearli, centrarli, tutto modificando il genitore.</li>
+              </ul>
+
+              Col mobile first nel css la classe container flex-direction diventa column
+              e quindi la media query diventa @media screen and (min-width: 1024px){.container {flex-direction: row;}}</p>
+              <p>Per nuove features, usa il sito <a href="http://caniuse.com/" target="_blank">Can I use</a>, in questo modo capisci se i browser li supportano. Nel caso non sia così, di solito basta usare un prefisso messo da un plugin chiamato autoprefixer.</p>
+        </div>
+      <div class="destra">DIV DUE</div>
+
+
+    </div>
+
+
+
+
+
+
+  </body>
+</html>

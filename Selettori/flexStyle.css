@@ -1,0 +1,170 @@
+*{
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body{
+  padding-top: 80px;
+}
+
+.container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: coral;
+  /*justify-content: center;*/
+  /*Il contenuto del nostro contenitore, deve giustificato in centro
+  */
+  /*justify-content: flex-start; default: tutto parte da sx*/
+  /*justify-content: flex-end;/*tutto parte da dx*/
+  /*space-around: disponi i due div in modo che lo spazio intorno a loro sia
+  equamente distribuito*/
+  /*space-between: li mette uno sparato a dx e uno sprato a sx*/
+
+
+  /*align-items: center; Allinea orizzontalmente i content*/
+  /*con flex-start parte dall'alto, end va in bass*/
+
+  /*La stessa cosa si fa incolonnando gli elementi*/
+  /*flex-direction: row; default. Tutti i tuoi figli mettili allineati in riga*/
+  /*flex-drection: column; Tutti i tuoi figli mettili in colonna*/
+
+}
+
+.sinistra{
+  background-color: grey;
+    /*height: 300px;*/
+
+  flex: 1;/*è una proporzione. Prenditi 2/3, 3/4 e così via*/
+  /*Avendo detto a dx flex 1, diciamo al contenitore di dividersi per 4.*/
+
+  /*A volte flex ha più di un valore.
+  Ma posso passargli altre proprietà:
+  - grow: la sua capacità di estendersi in base algi altri fratelli. Con un valore di 2,
+    la mia classe sx avrà una capacità di allargarsi.
+  - shrink: quanto questo si può restrignere per fare spazio agli altri
+  - basis: è una dimensione che noi diamo minima che il div deve avere
+
+  Queste proprietà non ci interessano perchè una gallery fotografica ha elementi
+  tutti uguali rispetto agli altri*/
+
+  /*Come si usa il flex? si lasciano grow e shrink a 0 e si mette basis a 80%* e
+  l'altro a 20%. Per lettura del css è più corretto. Quindi flex: 0 0 80%/
+  /*Con order si dice l'ordine degli elementi*/
+  /*order: 1;*/
+
+  /*display: flex;anche i figli possono fare figli*/
+
+}
+
+.selectors p{
+  color: yellow;
+}
+
+.selectors p:first-child{
+  color: black;
+}
+
+.selectors p:last-of-type{
+  color: green;
+}
+
+button{
+  background-color: yellow;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 5px 15px;
+  box-shadow: none;
+  outline: none;
+  transition: all 150ms ease-in-out;
+  /*Transition:
+  Primo parametro: quale proprietà css voglio che sia influenzata
+  ease-in-out: effetto un pò più accelerato rispetto al fade*/
+
+
+}
+
+button:hover{
+  /*Quando il mouse ci passa sopra*/
+  cursor: pointer; /*Fammi venire la manina*/
+  background-color: #a2a203;
+}
+
+button:active{
+  border: 1px solid red;
+}
+
+button:focus{
+  border: 1px solid red;
+
+}
+
+button:disabled{
+  cursor: not-allowed;
+  background-color: grigio;
+}
+
+.sinistra .sinistra-child{
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+
+}
+
+.destra{
+  background-color: black;
+  color: white;
+  /*height: 500px;*/
+  /*Diamo delle altezze diverse per vedere il comportamento*/
+
+  /*flex: 1;*/
+  /*E se il cliente volesse esattamente 300px di aside? Diamo a sx flex 1 e a dx
+  diamo un width*/
+  width: 300px;
+
+  /*order:2;*/
+
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: white;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+
+.logo{
+  height: 53px;
+  width: 76px;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.menu li {
+  display: inline-block;
+}
+
+ul.menu li a{
+  text-decoration: none;
+}

@@ -71,6 +71,9 @@ p{
 	content: "";
 	display: block;
 	clear: both;
+	/*
+	il clear si mette in tutti quegli elementi dopo il float. Se non metto il clear, gli elementi non si sovrappongono e gli dico di andare a capo. Il clear agisce all'esterno, mentre il clearfix all'interno.s
+	*/
 }
 
 nav {
