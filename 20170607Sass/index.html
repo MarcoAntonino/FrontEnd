@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sass</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </head>
+
+  <head>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li><a href="#">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACTS</a></li>
+        </ul>
+      </div>
+    </nav>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <section class="col-sm-7 col-xs-12">
+
+        <div class="rettangolo">
+          <p>Rettangolo</p>
+
+        </div>
+
+        <p>Nel CSS non potendo utilizzare logiche, nè mettere variabili. Vi è stata quindi la necessità di creare un linguaggio un file .scss, lo mangia, lo compila e lo rende disponibile.</p>
+
+        <p>Ripassa l'autoprefixer.</p>
+
+        <p>Useremo <a href="http://www.codepen.io" target="_blank">codepen.io</a></p>
+
+        <p>Con scss usiamo i <code>@mixin</code> che sostituiscono il clearfix. Il mixin sono delle funzioni. Quindi le richiami all'interno della tua pagina css con il comando include. Ricordiamo che il clearfix serve dentro i contenitori che hanno il float</p>
+
+        <p>Oltre ai mixin abbiamo le function. La differenza? Il mixin ritorna una codice di css senza che io debba riscriverlo ogni volta. La function invece mi torna proprio un valore.</p>
+
+        <p>Per il ridimensionamento dei font, usiamo sempre <a href="http://www.modularscale.com" target="_blank">Modular scale</a>.</p>
+        <p>Dal pronpt di comando se scriviamo sass --watch style.scss In questo modo ogni volta che salviamo il .scss il browser refrescia sempre il css compilato. Questo va a richiamare un programmino ruby fatto apposta. Per spegnerlo, premi <kbd><kbd>ctrl</kbd> + <kbd>c</kbd></kbd></p>
+
+        <p>Less è la stessa identica cosa ma funziona in Js invece che Ruby, quindi cambia solo il compilatore che ci gira dietro.</p>
+
+        <h4>Altro argomento</h4>
+        <p>Tutte le librerie, i motori, i compilatori sono dati da dei gestori di pacchetti in modo che tutti ce li abbiano.</p>
+        <p>JS ha <a href="https://www.npmjs.com/" target="_blank">npm</a>. In qeusto modo tu ti vai a scaricare il pacchetto che ti serve. Per esempio modularscale-sass.</p>
+
+        <p>Non ti mette un file in formato .json. Quando fai npn install, ti va a leggere proprio il json dove ci sono tutti i pacchetti che ti servono e quindi anche gli altri colleghi devono solo fare questo.</p>
+
+        <p>Ormai su npm è uno standard e tutte le librerie sono disponibili lì sopra.</p>
+
+        <h4>Consegna</h4>
+        <p>Creare una barra di navigazione e un contenuto sotto con del titolo.</p>
+
+      </section>
+    </div>
+
+  </body>
+</html>

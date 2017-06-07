@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/*
+.rettangolo{
+  background: red;
+}
+
+.rettangolo p{
+  color: white;
+}
+Questo ├¿ il vecchio modo di fare le cose con css, ├¿ molto ripetitivo e lungo
+*/
+/*Nel sass ci possono essere le variabili quindi*/
+/*
+Nel mondo reale faremo
+@import 'colors';
+@import 'borders';
+
+In poche parole i lfile variable conterr├á altri microfile variable
+*/
+.rettangolo {
+  background: yellow;
+  /*con &.rettangolo-border aggiungo una propriet├á, creo una variante, in pratica un overrite*/
+  /* la & ├¿ il this*/ }
+  .rettangolo p {
+    color: white; }
+  .rettangolo:hover {
+    background: black; }
+  .rettangolo.rettangolo-border {
+    border: 1px solid black; }
+  .rettangolo.rettangolo-shadow {
+    border: 0 0 10px grey; }
+
+/*# sourceMappingURL=style.css.map */

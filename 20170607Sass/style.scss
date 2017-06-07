@@ -1,0 +1,42 @@
+/*
+.rettangolo{
+  background: red;
+}
+
+.rettangolo p{
+  color: white;
+}
+Questo è il vecchio modo di fare le cose con css, è molto ripetitivo e lungo
+*/
+
+/*Nel sass ci possono essere le variabili quindi*/
+
+@import "mixins.scss";
+
+
+
+.rettangolo {
+
+  background: $color-primary;
+
+  p{
+    color: white;
+  }
+
+  &:hover {
+    background: $color-secondary;
+  }
+  &.rettangolo-border{
+    border: 1px solid $color-secondary;
+
+  }
+
+  &.rettangolo-shadow{
+    border: 0 0 10px grey;
+
+  }
+  /*con &.rettangolo-border aggiungo una proprietà, creo una variante, in pratica un overrite*/
+  /* la & è il this*/
+
+
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CALC e i Form</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+    <header>
+
+    </header>
+
+    <div class="container">
+
+      <section class="col-sm-7 col-xs-12">
+
+          <h2 class="text-center">Calc</h2>
+          <p class="text-justify"> Il <code>calc</code> è un altro metodo per fissare la sectione e farla scorrere. Funziona che la section sia al <var>100%-l'altezza dell'header</var>.</p>
+
+
+
+          <p class="text-justify">Il tag <code>&lt;form&gt; &lt;/form&gt;</code> fa solo da contenitore.</p>
+          <p class="text-justify">Abbiamo diversi tipi di input:
+          <ul>
+            <li>text</li>
+            <li>number</li>
+            <li>radiobox</li>
+            <li>checkbox</li>
+            <li>select</li>
+          </ul>
+            Per ogni input sarebbe bene mettere una label. L'attributo for serve a indicare a cosa è associata la label. Questo ci aiuta perchè cliccando sulla label, ci abilita il campo associato. Questo è molto utile per il mobile.
+        </p>
+        <p class="text-justify">Per quanto rigaurda l'input, il name è quello che arriva al server, quello che noi mandiamo. Quindi in questo caso al server arriverà: name=marco, surname=antonino. La value è il valore che manderò al server.</p>
+        <p class="text-justify">Il <em>required</em> imepdisce di inviare il form se il campo con required non è compilato. è un controllo lato client ma che ovviamente non è mai troppo sicuro. </p>
+        <p class="text-justify"><em>novalidate</em> dice di skippare i controlli lato client. </p>
+        <p>Il box-shadow serve per l'ombra. Vengono passati alcuni dati (tu non la vedi perchè boh). I primi due valori danno la direzione dell'ombra. Il terzo da la sfocatura. Vi è anche un valore per indicare quanto vogliamo ampia l'ombra.</p>
+
+        <h2 class="text-center">Differenza fra GET e POST</h2>
+        <pclass="text-justify">Il get è utilizzato per i dati di navigazione, mentre il post per dati sensibili.</p>
+
+      </section>
+      <aside class="col-sm-5 col-xs-12">
+        <h2 class="text-center">Inserisci i tuoi dati</h2>
+
+
+          <form class="" action="index.html" method="get">
+            <div class="form-group">
+              <label for="inputName">Name</label><br>
+              <input type="text" name="name" id="inputName" required><br>
+            </div>
+
+            <div class="form-group">
+              <label for="inputSurname">Surname</label><br>
+              <input type="text" name="surname" id="inputSurname" required><br>
+            </div>
+
+            <div class="form-group">
+              <label for="inputEmail">Email</label><br>
+              <input type="email" name="email" id="inputEmail" required><br>
+            </div>
+
+            <label for="">Gender</label><br>
+            <label class="radio-inline">
+              <input type="radio" name="gender" id="male" required> Male
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="gender" id="female" required> Female
+            </label><br>
+
+
+            <label for="">Hobbies</label><br>
+              <label class="checkbox-inline">
+                <input type="checkbox" name="hobby1" value="football"> Football
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" name="hobby2" value="volley"> Volley
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" name="hobby2" value="music"> Music
+              </label><br>
+            <button type="button" class="btn btn-default">Invia</button>
+
+            </div>
+          </form>
+
+
+			</aside>
+
+    </div>
+
+  </body>
+
+</html>
