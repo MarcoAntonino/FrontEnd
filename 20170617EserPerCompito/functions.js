@@ -1,8 +1,9 @@
-var form = document.getElementById("form");
+var form = document.getElementById("logSignForm");
+var inputs = document.getElementsByTagName("input");
+
 
 form.addEventListener("submit", function(event){
   event.preventDefault(); //fermo lì, non fare l'azione predefinita
-  var inputs = document.getElementsByTagName("input");
   /*Si prende tutti gli elementi che hanno come tagname input*/
 
   /**/
@@ -10,7 +11,8 @@ form.addEventListener("submit", function(event){
     //dando il punto accedo a type, name, value, ecc
     if (inputs[i].value == "") {
         console.log("non puoi lasciare vuoto il campo " + inputs[i].name);
-        alert("Non puoi lasciare vuoto il campo " + inputs[i].name);
+        //alert("Non puoi lasciare vuoto il campo " + inputs[i].name);
+
       }else{
       console.log(inputs[i].value);
       //form.submit();
@@ -21,3 +23,32 @@ form.addEventListener("submit", function(event){
   }
 
 });
+
+// form.addEventListener("blur", myBlurFunction, true);
+//
+//   function myBlurFunction() {
+//     for (var i = 0; i < inputs.length; i++) {
+//
+//       if(inputs[i].value== "")
+//       {
+//         inputs[i].value="Non puoi lasciare questo campo vuoto";
+//       }
+//
+//     }
+//
+//     }
+
+function disableButton() {
+
+  for (var i = 0; i < inputs.length; i++) {
+    if(inputs[i].value.length == 0)
+    {
+      document.getElementById('button').disabled = true;
+    }
+    else {
+    document.getElementById('button').disabled = false;
+    }
+  }
+}
+
+//disableButton();

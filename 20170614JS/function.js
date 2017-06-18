@@ -1,4 +1,4 @@
-var form = document.getElementById("form");
+var form = document.getElementById("logSignForm");
 
 form.style.width = "600px";
 form.style.height = "200px";
