@@ -1,0 +1,23 @@
+var form = document.getElementById("form");
+
+form.addEventListener("submit", function(event){
+  event.preventDefault(); //fermo lì, non fare l'azione predefinita
+  var inputs = document.getElementsByTagName("input");
+  /*Si prende tutti gli elementi che hanno come tagname input*/
+
+  /**/
+  for (var i = 0; i < inputs.length; ++i){
+    //dando il punto accedo a type, name, value, ecc
+    if (inputs[i].value == "") {
+        console.log("non puoi lasciare vuoto il campo " + inputs[i].name);
+        alert("Non puoi lasciare vuoto il campo " + inputs[i].name);
+      }else{
+      console.log(inputs[i].value);
+      //form.submit();
+
+      //sendToServer(inputs[i].value) come si fa nel mondo reale con ajax
+      //è una funzione scritta da noi
+    }
+  }
+
+});

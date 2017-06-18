@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+
+
+
+
+    <div class="container">
+      <section class="col-sm-7 col-xs-12">
+        <h1  class="text-center">JavaScript</h1>
+
+        <p class="text-justify">JS nasce negli anni 90 e a differnza di c, per esempio, JS viene compilato al momento. JS è già un linguaggio compilato come python, ruby e viene compilto dal browser. Il browser lo interpreta.</p>
+        <p class="text-justify">Js viene utilizzato per fare dei software ma non standalone. Crea dei software web che sono delle single page application. Sono delle pagine web che non cambiano mai rotta, ma cliccando una voce del menu, inviando dei dati su un form vediamo delle finestre, delle funzionalità come se la pagina fosse un software.Per esempio Ajax ci permette di prendere un contenuto e di metterlo dinamicamente dentro alla pagina senza far ricaricare altro.</p>
+        <p class="text-justify">Le varie librerie di JS ti creano una webview che puoi installare come se fosse un'app all'interno del tuo telefono. Con tutti i problemi che ti porti dietro, animazioni scattose. Il limite è quindi che sono dei plugin la cui compatibilità dipende se viene supportata da aggiornamenti successivi.</p>
+        <p class="text-justify">JS è un linguaggio orientato agli oggetti. Quando io definisco un oggetto io creo una carta di identità di caratteristiche formano quell'oggetto. Quindi quando io creo una classe, non ho creato l'oggetto stesso, ma la sua carta di identità. Per esempio noi apparteniamo alla classe essere umano, ma l'oggetto Rosa, Antonio e Alessandro sono differenti ma appartengono alla stessa classe.</p>
+        <p class="text-justify">Anche in JS un oggetto è la rappresentazione della classe stessa. Quando creo un oggetto avrà tutte le proprietà identificate nella clsse. JS ha già dei suoi oggetti incorporati già pronti, come <code>window, document</code>. Window fa riferimento all'intera finestra del nostro browser mentre document rapprenseta il nostro HTML. Quindi io posso controllare che tutti gli elementi siano stati inseriti nel document e agire di conseguenza. Posso cambiare il CSS da JS. Posso mettere e togliere delle classi dal CSS. Per esempio un pulsante, quando c'è un errore, può cambiare colore.</p>
+        <p class="text-justify">Window ha una serie di oggetti al suo interno che io ovviamente posso usare. Tutto quello che c'è in windows è tutto quello che noi possiamo fare in JS. Ad esempio io ho anche screen che mi dice la width e altro. Quando io vogli oandare a richiamare proprietà e oggetti dentro ad altri oggetti, metto il punto. Es <code>window.screen.width</code> dando invio restituisce la width della finestra. Essendo window l'oggetto principale, può essere omesso. Un modo per stampare a video le cose che voglio, è usare la console. Per esempio <code>console.log("Ciao a tutti")</code> stampa il messaggio. Log è una funzione: per questo motivo ha le parentesi perchè ovviamente si aspetta dei parametri.</p>
+        <p>La funzione clear() serve per pulire la console.</p>
+        <p class="text-justify"> <code>Document</code> è un altro oggetto e con esso posso andarmi ad agganciare agli elementi di HTML. Essendo intepretato al momento, ogni comando viene eseguito in tempo reale.</p>
+        <p class="text-justify"><code>function utente(name, surname) {return console.log("Ciao, io sono ", name, surname)}</code></p>
+        <p class="text-justify"><code>alert()</code> Ritorna un popup.</p>
+        <p class="text-justify">Le proprietà sono i tag HTML e quindi puoi modificarli dinamicamente con JS. All'avvenimento di un evento, cioè qualsiasi cosa che modifica lo stato attuale, JS può quindi modificare l'HTML.</p>
+        <p class="text-justify">Dichiarazione di un oggetto: <code>var human = {"eyes": true, "brain": true}</code></p>
+        <p class="text-justify">Dichiarazione di una funzione: <code>function checkHuman(a){if (a.eyes === true){return console.log("sono un umano")}else{return console.log("NON sono umano")}}</code></p>
+
+      </section>
+      <aside class="col-sm-5 col-xs-12">
+        <div class="error"></div>
+
+        </form>
+          <form id="form">
+            <input type="text" name="nome" id="name" placeholder="il tuo nome" />
+            <input type="text" name="cognome" id="surname" placeholder="il tuo cognome" />
+            <button type="submit">Invia</button>
+          </form>
+
+      </aside>
+    </div>
+
+    <script src="function.js">
+
+    </script>
+
+
+  </body>
+</html>
