@@ -78,5 +78,5 @@ form.addEventListener("submit",  function(event){
 
 function valid() {
     event.srcElement.className = "formValid";
-    console.log(event.srcElement.id);
+    
 }
