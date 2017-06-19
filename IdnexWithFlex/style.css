@@ -62,7 +62,7 @@ p{
 	height: 100%;
   width: 100%;
 	display: flex;
-	flex-drection: column;
+	flex-direction: column;
 }
 
 /*questo container successivo è detto clearfix e si usa perché il body vede tutti
