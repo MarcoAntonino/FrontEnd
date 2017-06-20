@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>20170617EsPerCompito</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- onkeyup="disableButton()" -->
+
+    <div class="form-container">
+      <form id="logSignForm" class="form" action="http://webhook.site/e7dc96f5-13d1-45c5-a416-011c7b571dc4" method="post">
+        <h1>Sign Up or Log In</h1>
+        <label for="name">Nome:</label>
+        <input onfocus= "valid()" id="name" type="text" name="name">
+        <label for="surname">Cognome:</label>
+        <input  onfocus= "valid()" id="surname" type="text" name="surname" >
+        <label for="email">Email:</label>
+        <input  onfocus= "valid()" id="email" type="email" name="email" >
+        <label for="password">Password:</label>
+        <input  onfocus= "valid()" id="password" type="password" name="password" >
+        <button id="button" type="submit" name="button" >Invia</button>
+      </form>
+
+    </div>
+
+    <script src="functions.js">
+    </script>
+
+  </body>
+</html>
