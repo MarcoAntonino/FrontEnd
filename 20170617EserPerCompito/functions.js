@@ -1,28 +1,23 @@
 var form = document.getElementById("logSignForm");
 var inputs = document.getElementsByTagName("input");
 
+form.addEventListener("submit", function(event) {
 
 
 
-form.addEventListener("submit",  function(event){
+    for (var i = 0; i < inputs.length; ++i) {
+        if (inputs[i].value == "") {
+            event.preventDefault();
+            inputs[i].placeholder = "NON puoi lasciare questo campo vuoto";
+            //inputs[i].className += "formInvalid";
+            inputs[i].className = "formInvalid";
+            //inputs[i].style.background= "red";
 
-
-
-  for (var i = 0; i < inputs.length; ++i) {
-    if(inputs[i].value == ""){
-      event.preventDefault();
-      inputs[i].placeholder = "NON puoi lasciare questo campo vuoto";
-      //inputs[i].className += "formInvalid";
-      inputs[i].className = "formInvalid";
-      //inputs[i].style.background= "red";
-
-      }
+        }
 
     }
 
-  }
-
-);
+});
 
 
 // form.addEventListener("submit", function(event){
@@ -78,5 +73,5 @@ form.addEventListener("submit",  function(event){
 
 function valid() {
     event.srcElement.className = "formValid";
-    
+
 }

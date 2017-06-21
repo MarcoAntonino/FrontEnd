@@ -8,6 +8,7 @@ $secondary-color: black;
 $primary-font: 'Open Sans', sans-serif;
 $secondary-font: 'Roboto', sans-serif;
 
+
 @mixin clearfix() {
   &:after{
     content: '';
@@ -88,6 +89,10 @@ h1{
 
     label{
       font-family: $secondary-font;
+    }
+
+    .check{
+
     }
 
     @include clearfix();
