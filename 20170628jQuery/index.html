@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <section class="col-sm-7 col-xs-12">
+        <h1 class="text-center">jQuery</h1>
+        <p class="text-justify">jQuery è una libreria che permette di manipolare più facilmente JS.</p>
+        <p class="text-justify"> js mette a disposizione diversi oggetti: window, console. jQuery aggiunge elementi come il $ a window e aggiunge funzionalità. è una funzione decoratrice, cioè aggiunge delle funzionalità.</p>
+        <p class="change-color">Il dollaro dice: ciao sono jQuery, dimmi dove vuoi che io metta il codice. </p>
+        <p>Bisogna inserire jQuery nel punto giusto dell'html. Il browser legge dal'alto verso il basso. A volte capita che il jQuery lancia giàdei comandi a dei tag html che il browser non è ancor andato a leggere e quindi il codice jQuery non funziona. Es: io aspetto che arrivi una serie di imamgin idal server. Quando me le ritorna, le metto dentro un tag img. Ma io hodetto a jquery che deve fare una cosa per tuttii i tag img. Ma quelle immagini non ci sono ancora, non sono state ancora caricate. E quindi jQuery non funziona e ci dice undefined. Come si fa?</p>
+        <p>Si carica js e jQuery appena prima che il body si chiuda, in questom odo sono sicuro che il browser abbia caricato tutto.</p>
+        <p>Ma c'è un metodo più pulito (vai a vedere il codice). Si usa <code>$('document').ready(function () {//corpo della funzione})</code></p>
+        <p>Con js posso andare a richiamre delle funzioni in un secondo momenot. Ad esempi ocreo una funzione che se clicco una volta diventa rosso, un'altra torna nero</p>
+        <button type="button" name="button">Change me</button>
+
+
+
+      </section>
+      <aside class="col-sm-5 col-xs-12">
+        <form id="signup" class="" action="index.html" method="post">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name"value="" placeholder="inserisci il tuo nome">
+          </div>
+          <div class="form-group">
+            <label for="surname">Cognome</label>
+            <input type="text" name="surname" id="surname" placeholder="inserisci il tuo cognome" value="">
+          </div>
+          <button type="submit" name="button">Registrati</button>
+
+        </form>
+      </aside>
+
+    </div>
+
+    <script src="functions.js">
+    </script>
+  </body>
+</html>
