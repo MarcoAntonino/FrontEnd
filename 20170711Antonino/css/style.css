@@ -26,8 +26,20 @@ html, body{
     color: white;
 }
 
+.navbar-default .navbar-nav>li>a:hover{
+  background: pink;
+}
+
+.navbar-default .navbar-nav>li>a:active{
+  background: yellow;
+}
+
 .navbar-default .navbar-brand {
     color: black;
+}
+
+.navbar-brand {
+    padding: 0;
 }
 
 
@@ -36,7 +48,7 @@ html, body{
   justify-content: center;
   margin: 0 auto;
   height: 100%;
-  padding-top: 70px;	/*aumento padding-top del body perchè ho messo fixed nav e header*/
+  padding-top: 70px;
 
 }
 
@@ -72,14 +84,14 @@ footer p{
 
 
 }
-/*Per la responsivness, metti i ittoli più grossi*/
-@media screen and (min-width: 770px)/* and (max-width: 1200px)*/{
+
+@media screen and (min-width: 770px){
   *{
-			font-size: 18px /*Da qui in poi voglio che il sito sia a 18px*/
+			font-size: 18px
 	}
 
   h1,h2{
-		/*font-size: 1em; Corrisponde a 18px*/
+
 		font-size: 1.3em
 	}
 
