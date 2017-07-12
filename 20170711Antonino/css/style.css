@@ -27,11 +27,11 @@ html, body{
 }
 
 .navbar-default .navbar-nav>li>a:hover{
-  background: pink;
+  background: #D132B9;
 }
 
 .navbar-default .navbar-nav>li>a:active{
-  background: yellow;
+  background: black;
 }
 
 .navbar-default .navbar-brand {
@@ -86,14 +86,17 @@ footer p{
 }
 
 @media screen and (min-width: 770px){
-  *{
-			font-size: 18px
-	}
 
-  h1,h2{
+  p{
 
-		font-size: 1.3em
-	}
+    font-size: 18px;
+  }
+
+  h3{
+
+    font-size: 28px;
+  }
+
 
   form{
     width: 600px;

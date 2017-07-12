@@ -17,7 +17,7 @@ $('document').ready(function(){
       method: 'GET',
       success: function(data){
 
-          $('section').append('<h1>Our latest posts</h1>');
+          $('section').append('<h1>OUR NEW POSTS</h1>');
           data.map(function(post){
 
             $('section').append('<div id=post'+post.id+'> <h3>'+post.title+'</h3><p>'+post.body+'</p>'+'<button class="btn btn-default" type="button" name="delete" id="delete'+post.id+'">Delete</button></div>');
@@ -45,6 +45,11 @@ $('document').ready(function(){
     })
 
   }else {
+
+    function isEmail(email) {
+      var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      return regex.test(email);
+    }
     $('#form').submit(function(event) {
       var inputName = $('#name').val();
       var inputEmail = $('#email').val();
@@ -52,9 +57,14 @@ $('document').ready(function(){
       var inputBody = $('#messageBody').val();
       if (inputEmail == "" && inputBody == "") {
         event.preventDefault();
-        alert("Non puoi lasciare vuoti i campi");
+        alert("Non puoi lasciare vuoti i campi email e/o message");
+
       }else {
-        alert("messaggio inviato correttamente");
+        if (isEmail(inputEmail)) {
+          alert("Messaggio inviato correttamente");
+        }else {
+          alert("Per favore inserisci una mail valida");
+        }
       }
 
     })
