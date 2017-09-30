@@ -18,7 +18,7 @@ Nel mondo reale faremo
 In poche parole i lfile variable conterr├á altri microfile variable
 */
 .rettangolo {
-  background: yellow;
+  background: blue;
   /*con &.rettangolo-border aggiungo una propriet├á, creo una variante, in pratica un overrite*/
   /* la & ├¿ il this*/ }
   .rettangolo p {

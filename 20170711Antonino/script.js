@@ -1,7 +1,7 @@
 var userId = 1;
 $('document').ready(function(){
 
-  /*Probably the smartest thing to do, is to have more tha just one script.js file.
+  /*Probably the smartest thing to do, is to have more than just one script.js file.
   But the exercise asked for just one and there are only two html pages in this exercise, so I've decided to set this control on the page title.*/
 
   var pageTitle = $('title').text();
@@ -55,7 +55,7 @@ $('document').ready(function(){
       var inputEmail = $('#email').val();
       var inputObject = $('#object').val();
       var inputBody = $('#messageBody').val();
-      if (inputEmail == "" && inputBody == "") {
+      if (inputEmail == "" || inputBody == "") {
         event.preventDefault();
         alert("Non puoi lasciare vuoti i campi email e/o message");
 
